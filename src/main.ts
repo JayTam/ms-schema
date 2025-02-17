@@ -1,5 +1,3 @@
-import './assets/main.css'
-
 import { createApp, type App, type DefineComponent } from 'vue'
 import { NInput, NSelect, NRadio } from "naive-ui";
 import Page from './Page.vue'
