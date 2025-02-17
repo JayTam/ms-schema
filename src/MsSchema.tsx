@@ -5,10 +5,18 @@ type MsSchemaProps = {
 }
 
 export default defineComponent<MsSchemaProps>({
-  setup(props) {
+  // props: {
+  //   schema: {
+  //     type: Object,
+  //     default: () => ({}),
+  //   },
+  // },
+  props: { ...Object },
+  setup(props, { attrs }) {
     const { schema } = props
 
     console.log('schema', schema)
+    console.log('attrs', attrs.schema)
 
     return () => {
       return <div>hello world</div>

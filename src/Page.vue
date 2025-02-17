@@ -7,5 +7,5 @@ const schema = {
 </script>
 
 <template>
-  <MsSchema :schema="{ component: 'input' }" />
+  <MsSchema :schema="schema" :style="{ width: '300px' }" />
 </template>
